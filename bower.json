@@ -1,0 +1,12 @@
+{
+    "name": "mosquitojs-game",
+    "description": "A light and fast HTML5 game engine utilising mosquitojs",
+    "license": "MIT",
+    "dependencies": {
+        "mosquitojs": "~0.2.2"
+    },
+    "ignore": [
+        "node_modules",
+        "app/bower_components"
+    ]
+}
