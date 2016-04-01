@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             src: {
                 files: [{
                     src: paths.js,
-                    dest: paths.build + 'js/mosquitojs.game.min.js'
+                    dest: paths.build + 'js/mosquitojs.gameLoop.min.js'
                 }]
             }
         }

@@ -1,5 +1,5 @@
 {
-    "name": "mosquitojs-game",
+    "name": "mosquitojs-game-loop",
     "version": "0.0.1",
     "dependencies": {},
     "devDependencies": {

@@ -1,9 +1,9 @@
 {
-    "name": "mosquitojs-game",
-    "description": "A light and fast HTML5 game engine utilising mosquitojs",
+    "name": "mosquitojs-game-loop",
+    "description": "A game loop module utilising mosquitojs",
     "license": "MIT",
     "dependencies": {
-        "mosquitojs": "~0.2.2"
+        "mosquitojs": "~0.2.3"
     },
     "ignore": [
         "node_modules",
