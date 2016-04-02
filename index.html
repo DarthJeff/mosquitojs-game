@@ -2,11 +2,31 @@
 <head>
     <title>Mosquito-Game Testing</title>
     <script type="text/javascript" src="app/bower_components/mosquitojs/dist/mosquito.min.js"></script>
+    <script type="text/javascript" src="app/js/gameLoop.module.js"></script>
+    <script type="text/javascript" src="app/js/gameLoop.observableInterface.js"></script>
+    <script type="text/javascript" src="app/js/gameLoop.service.js"></script>
 </head>
 Mosquito-Game Testing
 <body>
     <script type="text/javascript">
         "use strict";
+
+        mosquito.module('gameLoopModule').controller('testGameLoop', ['$gameLoop', function($gameLoop) {
+
+            setTimeout(function(){ $gameLoop.start(60); }, 50);
+
+            setTimeout(function(){ $gameLoop.stop(); }, 300);
+
+            this.stateChange = function(isRunning) { console.log(isRunning); };
+            this.preUpdate = function() { console.log('preUpdate'); };
+            this.update = function() { console.log('update'); };
+            this.preRender = function() { console.log('preRender'); };
+            this.render = function() { console.log('render'); };
+
+        }]).fromObservableInterface('$IoGameLoop');
+
+        mosquito.module('gameLoopModule').controller('testGameLoop');
+
 
     </script>
 </body>
