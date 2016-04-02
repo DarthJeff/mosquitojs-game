@@ -29,7 +29,6 @@ none
 $gameLoop
 ```
 ### Methods
-
 #### currentState
 Gets the IsRunning state of the game loop.
 ```bash
@@ -42,3 +41,19 @@ Start the game loop.
 Restart the game loop.
 #### stop
 Stop the the game loop.
+
+## Observable Interface Service
+```bash
+$IoGameLoop
+```
+### Methods
+#### stateChange
+Called when the game loop is started, restarted or stopped. Sends the currentState as a parameter.
+#### preUpdate
+First method in game loop to be called.
+#### update
+Main updated method which can be called multiple times within game loop if lagging occours.
+#### preRender
+Called when updating has completed and just before rendering.
+#### render
+Last method in game loop to be called.
