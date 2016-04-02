@@ -28,11 +28,17 @@ none
 ```bash
 $gameLoop
 ```
-## Methods
+### Methods
 
-### currentState
+#### currentState
 Gets the IsRunning state of the game loop.
 ```bash
 stopped: false
 running: true
 ```
+#### start(framesPerSecond)
+Start the game loop.
+#### restart
+Restart the game loop.
+#### stop
+Stop the the game loop.
